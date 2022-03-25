@@ -12,22 +12,22 @@
       <div class="wrapper">
         <div class="field">
           <div class="circle">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="blue" onclick="blue();"></div>
+            <div class="red" onclick="red();"></div>
+            <div class="green" onclick="green();"></div>
+            <div class="yellow" onclick="yellow();"></div>
           </div>
         </div>
         <div class="game-info">
           <div class="round">
             <h2>Round:</h2>
-            <button class="btn">Start</button>
+            <button class="btn" onclick="startGame()">Start</button>
           </div>
           <div class="game-level">
             <h2>Game Level:</h2>
             <div>
               <input type="radio" id="easy" name="level" value="easy" />
-              <label for="easy">Easy</label>
+              <label for="easy" onclick="level(1500)">Easy</label>
             </div>
             <div>
               <input
@@ -37,11 +37,11 @@
                 value="middle"
                 checked
               />
-              <label for="middle">Middle</label>
+              <label for="middle" onclick="level(1000)">Middle</label>
             </div>
             <div>
               <input type="radio" id="hard" name="level" value="hard" />
-              <label for="hard">Hard</label>
+              <label for="hard" onclick="level(400)">Hard</label>
             </div>
           </div>
         </div>

@@ -70,27 +70,60 @@ body {
 .circle div {
   height: 200px;
   width: 200px;
-  opacity: 0.6;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
-.circle div:nth-child(1) {
+.circle .blue {
   background-color: #16acea;
   border-radius: 200px 0 0 0;
 }
 
-.circle div:nth-child(2) {
+.blue:hover {
+  opacity: 0.75;
+}
+
+.blue:active {
+  opacity: 1;
+}
+
+.circle .red {
   background-color: #FF5643;
   border-radius: 0 200px 0 0;
 }
 
-.circle div:nth-child(3) {
+.red:hover {
+  opacity: 0.75;
+}
+
+.red:active {
+  opacity: 1;
+}
+
+.circle .yellow {
   background:#FEEF33;
+  border-radius: 0 0 200px 0;
+}
+
+.yellow:hover {
+  opacity: 0.75;
+}
+
+.yellow:active {
+  opacity: 1;
+}
+
+.circle .green {
+  background: #BEDE15;
   border-radius: 0 0 0 200px;
 }
 
-.circle div:nth-child(4) {
-  background: #BEDE15;
-  border-radius: 0 0 200px 0;
+.green:hover {
+  opacity: 0.75;
+}
+
+.green:active {
+  opacity: 1;
 }
 
 @media (min-width: 320px) and (max-width: 766px) {
