@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.game-info { 
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4f4f4;
+  color: #333;
+  border-radius: 5px;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.title {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.round {
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.circle div {
+  height: 200px;
+  width: 200px;
+  opacity: 0.6;
+}
+
+.circle div:nth-child(1) {
+  background-color: #16acea;
+  border-radius: 200px 0 0 0;
+}
+
+.circle div:nth-child(2) {
+  background-color: #FF5643;
+  border-radius: 0 200px 0 0;
+}
+
+.circle div:nth-child(3) {
+  background:#FEEF33;
+  border-radius: 0 0 0 200px;
+}
+
+.circle div:nth-child(4) {
+  background: #BEDE15;
+  border-radius: 0 0 200px 0;
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+  .wrapper {
+    display: block;
+  }
+  .field {
+    display: flex;
+    justify-content: center;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circle div {
+    height: 100px;
+    width: 100px;
+  }
+
+  .circle div:nth-child(1) {
+    border-radius: 100px 0 0 0;
+  }
+
+  .circle div:nth-child(2) {
+    border-radius: 0 100px 0 0;
+  }
+
+  .circle div:nth-child(3) {
+    border-radius: 0 0 0 100px;
+  }
+
+  .circle div:nth-child(4) {
+    border-radius: 0 0 100px 0;
+  }
+}
